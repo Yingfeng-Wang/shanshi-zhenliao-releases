@@ -5,8 +5,8 @@
 | 资产 | 用途 |
 | --- | --- |
 | `latest.json` | 更新清单：版本号、更新说明、安装包地址、minisign 签名。客户端匿名拉取 `releases/latest/download/latest.json` |
-| `ShanshiNutritionZhenliao_1.0.0_x64_zh-CN.msi` | Windows 安装包（资产名须为纯 ASCII —— GitHub 会整段剔除中文等非 ASCII 字符） |
-| `ShanshiNutritionZhenliao_1.0.0_x64_zh-CN.msi.sig` | 安装包的 minisign 签名。客户端下载后在本地验签，**验签不过即拒绝安装** |
+| `ShanshiNutritionZhenliao_1.0.1_x64_zh-CN.msi` | Windows 安装包（资产名须为纯 ASCII —— GitHub 会整段剔除中文等非 ASCII 字符） |
+| `ShanshiNutritionZhenliao_1.0.1_x64_zh-CN.msi.sig` | 安装包的 minisign 签名。客户端下载后在本地验签，**验签不过即拒绝安装** |
 
 ## 为什么公开是安全的
 
@@ -23,7 +23,7 @@
 安装包未做 Authenticode 代码签名，Windows 会提示「未知发布者」。如需确认文件完整：
 
 ```
-certutil -hashfile ShanshiNutritionZhenliao_1.0.0_x64_zh-CN.msi SHA256
+certutil -hashfile ShanshiNutritionZhenliao_1.0.1_x64_zh-CN.msi SHA256
 ```
 
 与对应 Release 正文列出的 SHA256 比对即可。
